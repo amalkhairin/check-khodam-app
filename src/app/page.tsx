@@ -23,15 +23,27 @@ export default function Home() {
   const randomTest = Math.round(Math.random());
 
   let randomKhodam = "";
-
-  if (randomTest === 0) {
-    randomKhodam = animals[randomIndexAnimal] ?? animals[0] + " " + behaviours[randomIndexBehaviour] ?? behaviours[0];
-  } else {
-    randomKhodam = things[randomIndexThing] ?? things[0];
-  }
+  let randomAnimal = animals[randomIndexAnimal];
+  let randomBehaviour = behaviours[randomIndexBehaviour];
+  let randomThing = things[randomIndexThing];
 
   if (randomKhodam === "" || randomKhodam === undefined || randomKhodam === null) {
     randomKhodam = "NPC Biasa"
+  }
+  if (randomAnimal === "" || randomAnimal === undefined || randomAnimal === null) {
+    randomKhodam = animals[0];
+  }
+  if (randomBehaviour === "" || randomBehaviour === undefined || randomBehaviour === null) {
+    randomKhodam = behaviours[0];
+  }
+  if (randomThing === "" || randomThing === undefined || randomThing === null) {
+    randomKhodam = things[0];
+  }
+
+  if (randomTest === 0) {
+    randomKhodam = randomAnimal + " " + randomBehaviour;
+  } else {
+    randomKhodam = randomThing; 
   }
 
   // const khodam = animals[randomIndexAnimal] + " " + behaviours[randomIndexBehaviour];
