@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --star: url("data:image/svg+xml,%3Csvg width='119' height='118' viewBox='0 0 119 118' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M52.6622 5.39767C54.4129 -1.75756 64.587 -1.75756 66.3377 5.39767L75.4668 42.7092L112.778 51.8384C119.934 53.589 119.934 63.7631 112.778 65.5138L75.4668 74.6429L66.3377 111.954C64.587 119.11 54.4129 119.11 52.6622 111.954L43.5331 74.6429L6.22152 65.5138C-0.933704 63.7631 -0.933704 53.589 6.22152 51.8384L43.5331 42.7092L52.6622 5.39767Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+
+input[type="text"]::-moz-color-swatch {
+  border: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  border-radius: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+input[type="text"]:focus {
+  outline: none !important;
+}
+
+input[type="text"]:focus {
+  outline: none !important;
+}
+
+
+.custom-input-text {
+  width: 100% !important;
+  padding: 10px 20px !important;
+  background: #d9d9d958 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #cecece !important;
+  text-align: center !important;
+  border-radius: 200px !important;
+}
+
+.title {
+  filter: drop-shadow(0px 0px 4px #4b7eff82) !important;
+}
+
+#btn-check {
+  filter: drop-shadow(0px 0px 6px #4b7eff57) !important;
+}
+
+.loading {
+  filter: drop-shadow(0px 0px 6px #4b7eff57) !important;
+}
+
+.result-text {
+  filter: drop-shadow(0px 0px 6px #4b7eff57) !important;
+}
+
+.loading::before {
+  content: '';
+  background: var(--star);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  animation: star-animation 1s linear infinite;
+}
+.loading::after {
+  content: '';
+  background: var(--star);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  animation: star-animation 1s linear 0.5s infinite;
+}
+
+@keyframes star-animation {
+  0% {
+    transform: translate(-40px, -40px) scale(0) ;
+  }
+  50% {
+    transform: translate(-20px, -20px) scale(1) ;
+  }
+  100% {
+    transform: translate(0px, 0px) scale(0) ;
+  }
+}
+
