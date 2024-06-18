@@ -25,9 +25,9 @@ export default function Home() {
   let randomKhodam = "";
 
   if (randomTest === 0) {
-    randomKhodam = animals[randomIndexAnimal] + " " + behaviours[randomIndexBehaviour];
+    randomKhodam = animals[randomIndexAnimal] ?? animals[0] + " " + behaviours[randomIndexBehaviour] ?? behaviours[0];
   } else {
-    randomKhodam = things[randomIndexThing];
+    randomKhodam = things[randomIndexThing] ?? things[0];
   }
 
   if (randomKhodam === "" || randomKhodam === undefined || randomKhodam === null) {
