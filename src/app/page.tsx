@@ -22,6 +22,18 @@ export default function Home() {
 
   const randomTest = Math.round(Math.random());
 
+  let randomKhodam = "";
+
+  if (randomTest === 0) {
+    randomKhodam = animals[randomIndexAnimal] + " " + behaviours[randomIndexBehaviour];
+  } else {
+    randomKhodam = things[randomIndexThing];
+  }
+
+  if (randomKhodam === "" || randomKhodam === undefined || randomKhodam === null) {
+    randomKhodam = "NPC Biasa"
+  }
+
   // const khodam = animals[randomIndexAnimal] + " " + behaviours[randomIndexBehaviour];
 
   const checkKhodam = (e: any) => {
@@ -31,11 +43,7 @@ export default function Home() {
       setIsLoading(false);
       setIsResult(true);
       setName(e.target.nama.value);
-      if (randomTest === 0) {
-        setKhodam(animals[randomIndexAnimal] + " " + behaviours[randomIndexBehaviour]);
-      } else {
-        setKhodam(things[randomIndexThing]);
-      }
+      setKhodam(randomKhodam);
     }, 5000);
   }
 
