@@ -12,7 +12,7 @@ export default function Home() {
   const [isResult, setIsResult] = useState(false);
 
   const animals = ["Kucing", "Tikus", "Kadal", "Kuda Nil", "Bunglon", "Siput", "Koala", "Kodok", "Monyet", "Anjing", "Harimau", "Kuda", "Komodo", "Gajah", "Cicak", "Ular", "Kura-kura", "Lele", "Singa", "Zebra", "Bebek", "Ayam", "Buaya", "Gorila", "Ikan", "Ubu-ubur", "Cacing", "Semut", "Udang", "Musang", "Kecoak", "Kupu-kupu", "Laba-laba"];
-  const behaviours = ["Jawa", "Depresi", "Mekanik", "Metal", "Insom", "Skizo", "Klepto", "Bunting", "Birahi", "Sigma", "Raksasa", "Berkaki Seribu", "Skizo", "Sad boy", "Mewing", "Gyatt", "Yapper", "Yapper", "Skizo", "Sigma", "Gyatt", "Jawa", "Sigma", "Ngesot", "Sunda", "Kalimantan", "Balado", "Kutub", "Sumatera", "Balado", "Sunda", "Sumatera", "Sunda", "Yapper"];
+  const behaviours = ["Jawa", "Depresi", "Mekanik", "Metal", "Insom", "Skizo", "Klepto", "Bunting", "Birahi", "Sigma", "Raksasa", "Berkaki Seribu", "Skizo", "Sad boy", "Mewing", "Gyatt", "Yapper", "Yapper", "Skizo", "Sigma", "Jawa", "Sigma", "Ngesot", "Sunda", "Kalimantan", "Balado", "Kutub", "Sumatera", "Balado", "Sunda", "Sumatera", "Sunda", "Yapper"];
 
   const randomIndexAnimal = Math.floor(Math.random() * animals.length);
   const randomIndexBehaviour = Math.floor(Math.random() * behaviours.length);
