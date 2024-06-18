@@ -50,7 +50,7 @@ export default function Home() {
                 { !isLoading && !isResult && <form onSubmit={(e) => checkKhodam(e)} className="flex flex-col justify-center items-center">
                   <div className="mt-5 flex flex-col justify-center items-center">
                     <div className="text-center text-sm font-light">Cek khodam yang ada di dalam diri kamu</div>
-                    <input className="text-sm custom-input-text mt-2" name="nama" type="text" placeholder="Tulis nama kamu di sini" />
+                    <input className="text-sm custom-input-text mt-2" name="nama" type="text" placeholder="Tulis nama kamu di sini" required />
                   </div>
                   <button className="mt-5 bg-[#5F59D0] px-8 py-2 rounded-[200px] hover:bg-[#4e4aa7]" id="btn-check" type="submit" >CHECK</button>
                 </form> }
