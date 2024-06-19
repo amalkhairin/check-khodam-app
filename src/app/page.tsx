@@ -28,10 +28,6 @@ export default function Home() {
   let randomBehaviour = behaviours[randomIndexBehaviour];
   let randomThing = things[randomIndexThing];
 
-  console.log(randomIndexAnimal);
-  console.log(randomAnimal);
-  console.log(randomThing);
-
   if (randomKhodam === "" || randomKhodam === undefined || randomKhodam === null) {
     randomKhodam = "NPC Biasa"
   }
