@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Maruu', url: 'https://maruhodo.id' }],
   creator: 'Maruu',
   icons: {
-    icon: '/icon.ico',
+    icon: '/favicon.ico',
   },
   openGraph: {
     title: 'Cek Khodam',
@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/icon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={poppins.className}>{children}</body>
     </html>
