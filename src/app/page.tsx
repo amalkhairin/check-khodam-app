@@ -12,14 +12,14 @@ export default function Home() {
   const [isResult, setIsResult] = useState(false);
   const [flag2, setFlag2] = useState(true);
 
-  const animals = ["Kucing", "Tikus", "Kadal", "Kuda Nil", "Bunglon", "Siput", "Koala", "Kodok", "Monyet", "Anjing", "Harimau", "Kuda", "Komodo", "Gajah", "Cicak", "Ular", "Kura-kura", "Lele", "Singa", "Zebra", "Bebek", "Ayam", "Buaya", "Gorila", "Naga", "Naga", "Ikan", "Ubu-ubur", "Cacing", "Semut", "Udang", "Musang", "Kecoak", "Kupu-kupu", "Laba-laba"];
+  const animals = ["Kucing", "Tikus", "Kadal", "Kuda Nil", "Bunglon", "Siput", "Koala", "Kodok", "Monyet", "Anjing", "Harimau", "Kuda", "Komodo", "Gajah", "Cicak", "Ular", "Kura-kura", "Lele", "Laba-laba", "Singa", "Zebra", "Bebek", "Ayam", "Buaya", "Gorila", "Naga", "Naga", "Ikan", "Ubu-ubur", "Cacing", "Semut", "Udang", "Musang", "Kecoak", "Kupu-kupu", "Laba-laba"];
   const behaviours = ["Jawa", "Depresi", "Mekanik", "Metal", "Insom", "Skizo", "Klepto", "Bunting", "Birahi", "Sigma", "Raksasa", "Berkaki Seribu", "Skizo", "Sad boy", "Mewing", "Gyatt", "Yapper", "Yapper", "Skizo", "Ambis", "Sigma", "Dribble", "Dribble", "Jawa", "Sigma", "Ngesot", "Sunda", "Kalimantan", "Kutub", "Sumatera", "Sunda", "Sumatera", "Sunda", "Yapper", "Ngesot", "Ambis"];
 
-  const things = ["Speaker JBL", "Toa Masjid", "Lemari 2 Pintu", "Kulkas", "Taplak Meja", "Pecel Lele", "Charger Iphone", "TWS", "Kalkulator", "Sendal Jepit", "Undur-undur Maju", "Bagas Dribble", "Sendal Jepit", "Sapu Lidi", "Gagang Pintu", "Tutup Toples", "Rice Cooker", "Gerobak Ketoprak", "Ban Motor", "Bakwan Jagung", "Rice Cooker"]
+  const things = ["Speaker JBL", "Toa Masjid", "Lemari 2 Pintu", "Kulkas", "Taplak Meja", "Pecel Lele", "Charger Iphone", "TWS", "Kalkulator", "Sendal Jepit", "Undur-undur Maju", "Bagas Dribble", "Sendal Jepit", "Sapu Lidi", "Gagang Pintu", "Tutup Toples", "Rice Cooker", "Gerobak Ketoprak", "Ban Motor", "Bakwan Jagung", "Rice Cooker", "Nugget Rebus", "Asep Kulkas", "Bintang Sigma", "Helikopter", "Laba-laba Sunda", "Raja Beruang", "Nastar", "Seblak Ceker", "Macan Cisewu"]
 
-  const randomIndexAnimal = Math.round(Math.random() * animals.length);
-  const randomIndexBehaviour = Math.round(Math.random() * behaviours.length);
-  const randomIndexThing = Math.round(Math.random() * things.length);
+  const randomIndexAnimal = Math.round(Math.random() * (animals.length - 1));
+  const randomIndexBehaviour = Math.round(Math.random() * (behaviours.length - 1));
+  const randomIndexThing = Math.round(Math.random() * (things.length - 1));
 
   const randomTest = Math.round(Math.random());
 
@@ -27,6 +27,10 @@ export default function Home() {
   let randomAnimal = animals[randomIndexAnimal];
   let randomBehaviour = behaviours[randomIndexBehaviour];
   let randomThing = things[randomIndexThing];
+
+  console.log(randomIndexAnimal);
+  console.log(randomAnimal);
+  console.log(randomThing);
 
   if (randomKhodam === "" || randomKhodam === undefined || randomKhodam === null) {
     randomKhodam = "NPC Biasa"
