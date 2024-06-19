@@ -10,6 +10,7 @@ export default function Home() {
   const [name, setName] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isResult, setIsResult] = useState(false);
+  const [flag2, setFlag2] = useState(true);
 
   const animals = ["Kucing", "Tikus", "Kadal", "Kuda Nil", "Bunglon", "Siput", "Koala", "Kodok", "Monyet", "Anjing", "Harimau", "Kuda", "Komodo", "Gajah", "Cicak", "Ular", "Kura-kura", "Lele", "Singa", "Zebra", "Bebek", "Ayam", "Buaya", "Gorila", "Naga", "Naga", "Ikan", "Ubu-ubur", "Cacing", "Semut", "Udang", "Musang", "Kecoak", "Kupu-kupu", "Laba-laba"];
   const behaviours = ["Jawa", "Depresi", "Mekanik", "Metal", "Insom", "Skizo", "Klepto", "Bunting", "Birahi", "Sigma", "Raksasa", "Berkaki Seribu", "Skizo", "Sad boy", "Mewing", "Gyatt", "Yapper", "Yapper", "Skizo", "Sigma", "Dribble", "Dribble", "Jawa", "Sigma", "Ngesot", "Sunda", "Kalimantan", "Balado", "Kutub", "Sumatera", "Balado", "Sunda", "Sumatera", "Sunda", "Yapper"];
@@ -51,9 +52,11 @@ export default function Home() {
   const checkKhodam = (e: any) => {
     e.preventDefault();
     setIsLoading(true);
+    setFlag2(false);
     setTimeout(() => {
       setIsLoading(false);
       setIsResult(true);
+      setFlag2(true);
       setName(e.target.nama.value);
       setKhodam(randomKhodam);
     }, 5000);
@@ -62,6 +65,7 @@ export default function Home() {
   const resetKhodam = (e: any) => {
     e.preventDefault();
     setKhodam("");
+    setFlag2(true);
     setIsResult(false);
     setName("");
   }
@@ -93,6 +97,10 @@ export default function Home() {
                   <div className="text-[12px] text-gray-400 text-center">Jangan lupa share ke yang lain agar mereka tahu sosok aseli yang ada di dalam diri kamu</div>
                   <button onClick={(e) => resetKhodam(e)} className="mt-3 text-[12px] bg-[#5F59D0] text-white px-4 py-1 rounded-full">Ulangi</button>
                 </div> }
+                {flag2 && <div className="flex flex-col mt-5">
+                  <div className="text-[10px] text-white text-center">Permainan lainnya:</div>
+                  <Link href="https://cupid-meter.vercel.app/" target="_blank" className="text-[#ffd3e0] font-bold">Cupid Meter</Link>
+                </div>}
               </div>
           </div>
         </div>
