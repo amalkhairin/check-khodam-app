@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #1E1E20 !important;
+  background: url('/bg.png'), #1E1E20 !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: cover !important;
