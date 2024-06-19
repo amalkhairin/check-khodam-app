@@ -74,7 +74,10 @@ export default function Home() {
     <main className="h-screen w-full m-0 overflow-hidden">
       <div className="w-auto h-full custom-bg m-0 overflow-hidden">
         <div className="w-auto h-screen flex justify-center items-center relative z-10 m-0 overflow-hidden">
-        <div className="text-white font-thin text-[12px] absolute bottom-0 left-[50%] translate-x-[-50%] translate-y=0 z-[1] my-1">Developed by <Link className="text-[#97D3FF] font-bold" href="https://twitter.com/maruu_snk" target="_blank">Maruu</Link> & <Link className="text-[#97D3FF] font-bold" href="https://twitter.com/jows__" target="_blank">Jows</Link></div>
+        <div className="flex flex-col justify-center items-center absolute bottom-0 left-[50%] translate-x-[-50%] translate-y=0 z-[1] my-1">
+          <div className="text-center text-white my-2 text-[12px]">Support kami di <Link className="text-[#ff7676] font-bold" href="https://trakteer.id/maru-maru/tip?open=true" target="_blank">Trakteer</Link></div>
+          <div className="text-white font-thin text-[10px] text-center">Developed by <Link className="text-[#97D3FF] font-bold" href="https://twitter.com/maruu_snk" target="_blank">Maruu</Link> & <Link className="text-[#97D3FF] font-bold" href="https://twitter.com/jows__" target="_blank">Jows</Link></div>
+        </div>
           <div className="flex-col text-white bg-[#9394ab3f] p-10 backdrop-filter backdrop-blur-sm border border-gray-500 rounded-xl sm:w-screen md:w-screen lg:w-1/3 xl:w-1/3 2xl:w-1/3 mx-1">
               <div className="flex flex-col justify-center items-center">
                 <h2 className="text-xl font-bold title">Cek Khodam</h2>
