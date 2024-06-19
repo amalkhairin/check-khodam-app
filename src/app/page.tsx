@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -46,8 +45,6 @@ export default function Home() {
   } else {
     randomKhodam = randomThing; 
   }
-
-  // const khodam = animals[randomIndexAnimal] + " " + behaviours[randomIndexBehaviour];
 
   const checkKhodam = (e: any) => {
     e.preventDefault();
