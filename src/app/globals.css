@@ -6,6 +6,14 @@
   --star: url("data:image/svg+xml,%3Csvg width='119' height='118' viewBox='0 0 119 118' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M52.6622 5.39767C54.4129 -1.75756 64.587 -1.75756 66.3377 5.39767L75.4668 42.7092L112.778 51.8384C119.934 53.589 119.934 63.7631 112.778 65.5138L75.4668 74.6429L66.3377 111.954C64.587 119.11 54.4129 119.11 52.6622 111.954L43.5331 74.6429L6.22152 65.5138C-0.933704 63.7631 -0.933704 53.589 6.22152 51.8384L43.5331 42.7092L52.6622 5.39767Z' fill='white'/%3E%3C/svg%3E%0A");
 }
 
+body {
+  background: url('/bg.png'), #1E1E20 !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+
 
 input[type="text"]::-moz-color-swatch {
   border: none;

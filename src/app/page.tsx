@@ -71,10 +71,8 @@ export default function Home() {
   }
 
   return (
-    <main className="bg-[#1E1E20] h-screen w-full m-0 overflow-hidden">
+    <main className="h-screen w-full m-0 overflow-hidden">
       <div className="w-auto h-full custom-bg m-0 overflow-hidden">
-        <Image className="absolute z-[1] w-full h-full object-cover bg-center bg-no-repeat overflow-hidden" src="/bg-tiger.png" alt="tiger" width={1000} height={700}/>
-        
         <div className="w-auto h-screen flex justify-center items-center relative z-10 m-0 overflow-hidden">
         <div className="text-white font-thin text-[12px] absolute bottom-0 left-[50%] translate-x-[-50%] translate-y=0 z-[1] my-1">Developed by <Link className="text-[#97D3FF] font-bold" href="https://twitter.com/maruu_snk" target="_blank">Maruu</Link> & <Link className="text-[#97D3FF] font-bold" href="https://twitter.com/jows__" target="_blank">Jows</Link></div>
           <div className="flex-col text-white bg-[#9394ab3f] p-10 backdrop-filter backdrop-blur-sm border border-gray-500 rounded-xl sm:w-screen md:w-screen lg:w-1/3 xl:w-1/3 2xl:w-1/3 mx-1">
