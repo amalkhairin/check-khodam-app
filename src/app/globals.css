@@ -86,6 +86,7 @@ input[type="text"]:focus {
   bottom: 0px;
   right: 0px;
   position: absolute;
+  transform: translate(-40px, -40px) scale(0);
   animation: star-animation 1s linear 0.5s infinite;
 }
 
