@@ -1,9 +1,12 @@
 "use client"
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 export default function Home() {
+
+  const router = useRouter();
 
   const [khodam, setKhodam] = useState("");
   const [name, setName] = useState("");
@@ -60,11 +63,12 @@ export default function Home() {
   }
 
   const resetKhodam = (e: any) => {
-    e.preventDefault();
-    setKhodam("");
-    setFlag2(true);
-    setIsResult(false);
-    setName("");
+    // e.preventDefault();
+    router.refresh();
+    // setKhodam("");
+    // setFlag2(true);
+    // setIsResult(false);
+    // setName("");
   }
 
   return (
@@ -98,7 +102,7 @@ export default function Home() {
                   <div className="text-white text-center text-sm sm:text-sm md:text-sm lg:text-sm xl:text-md 2xl:text-2xl font-extralight mt-2">Khodam yang ada di dalam diri <span className="font-bold text-[#C3F8FF]">{name}</span>:</div>
                   <div className="result-text text-center text-4xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mt-7 mb-7 text-[#C3F8FF]">{khodam}</div>
                   <div className="text-[12px] sm:text-[12px] md:text-[12px] lg:text-[12px] xl:text-[14px] 2xl:text-[20px] text-gray-400 text-center">Jangan lupa share ke yang lain agar mereka tahu sosok aseli yang ada di dalam diri kamu</div>
-                  <button onClick={(e) => resetKhodam(e)} className="mt-3 text-[12px] sm:text-[12px] md:text-[12px] lg:text-[12px] xl:text-[14px] 2xl:text-3xl bg-[#5F59D0] text-white px-4 py-1 rounded-full">Ulangi</button>
+                  <a href="/" onClick={(e) => resetKhodam(e)} className="mt-3 text-[12px] sm:text-[12px] md:text-[12px] lg:text-[12px] xl:text-[14px] 2xl:text-3xl bg-[#5F59D0] text-white px-4 py-1 rounded-full">Ulangi</a>
                 </div>}
                 {flag2 && <div className="flex flex-col mt-5 justify-center items-center">
                   <div className="text-[10px] sm:text-[10px] md:text-[10px] lg:text-[10px] xl:text-[12px] 2xl:text-[18px] text-white text-center">Permainan lainnya:</div>
