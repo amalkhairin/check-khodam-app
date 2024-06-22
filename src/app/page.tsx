@@ -52,11 +52,11 @@ export default function Home() {
 
   const checkKhodam = (e: any) => {
     e.preventDefault();
-    setIsLoading(true);
-    if (inputRef.current) {
-      setName(inputRef.current.value);
-      console.log(inputRef.current.value);
+    const input = document.getElementById("inputnama");
+    if (input && input instanceof HTMLInputElement) {
+      setName(input.value)
     }
+    setIsLoading(true);
     setFlag2(false);
     setTimeout(() => {
       setIsLoading(false);
