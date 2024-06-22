@@ -57,7 +57,7 @@ export default function Home() {
       setIsLoading(false);
       setIsResult(true);
       setFlag2(true);
-      setName(e.target.nama.value);
+      setName(e.target.inputn.value);
       setKhodam(randomKhodam);
     }, 5000);
   }
@@ -90,7 +90,7 @@ export default function Home() {
                 {!isLoading && !isResult && <form onSubmit={(e) => checkKhodam(e)} className="flex flex-col justify-center items-center">
                   <div className="mt-5 flex flex-col justify-center items-center">
                     <div className="text-center font-light text-sm sm:text-sm md:text-sm lg:text-sm xl:text-md 2xl:text-2xl">Cek khodam yang ada di dalam diri kamu</div>
-                    <input className="sm:text-sm md:text-sm lg:text-sm xl:text-md 2xl:text-2xl custom-input-text mt-2" name="nama" type="text" placeholder="Tulis nama kamu di sini" required />
+                    <input className="sm:text-sm md:text-sm lg:text-sm xl:text-md 2xl:text-2xl custom-input-text mt-2" name="inputn" type="text" placeholder="Tulis nama kamu di sini" required />
                   </div>
                   <button className="mt-5 bg-[#5F59D0] px-8 py-2 rounded-[200px] hover:bg-[#4e4aa7] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] 2xl:text-[24px]" id="btn-check" type="submit" >CHECK</button>
                 </form>}
