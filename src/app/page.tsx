@@ -78,11 +78,7 @@ export default function Home() {
   return (
     <main className="h-screen w-full m-0 overflow-hidden">
       <div className="w-auto h-full custom-bg m-0 overflow-hidden">
-        <div className="w-auto h-screen flex justify-center items-center relative z-10 m-0 overflow-hidden">
-          <div className="flex flex-col justify-center items-center absolute bottom-0 left-[50%] translate-x-[-50%] translate-y=0 z-[-1] my-1">
-            <div className="text-center text-white my-2 text-[12px] sm:text-[12px] md:text-[12px] lg:text-[12px] xl:text-[13px] 2xl:text-[20px]">Support kami di <Link className="text-[#ff7676] font-bold" href="https://trakteer.id/maru-maru/tip?open=true" target="_blank">Trakteer Maru</Link> & <Link className="text-[#ff7676] font-bold" href="https://trakteer.id/jows/tip?open=true" target="_blank">Trakteer Jows</Link></div>
-            <div className="text-white font-thin text-[10px] sm:text-[10px] md:text-[10px] lg:text-[10px] xl:text-[11px] 2xl:text-[18px] text-center">Developed by <Link className="text-[#97D3FF] font-bold" href="https://twitter.com/maruu_snk" target="_blank">Maruu</Link> & <Link className="text-[#97D3FF] font-bold" href="https://twitter.com/jows__" target="_blank">Jows</Link></div>
-          </div>
+        <div className="w-auto h-screen flex flex-col justify-center items-center relative z-10 m-0 overflow-hidden">
           <div className="w-full h-screen flex flex-col justify-center items-center">
             <div className="flex flex-col justify-center mb-4 px-5 py-2 rounded-lg bg-[#dcad6746] items-center text-[12px] sm:text-[12px] md:text-[12px] lg:text-[12px] xl:text-[13px] 2xl:text-[20px]">
               <div className=" text-white text-center">Mulai 22 Juni 2024, Website check khodam akan dialihkan ke</div>
@@ -114,7 +110,10 @@ export default function Home() {
                 </div>}
               </div>
             </div>
-
+          </div>
+          <div className="flex flex-col justify-center items-center my-1">
+            <div className="text-center text-white my-2 text-[12px] sm:text-[12px] md:text-[12px] lg:text-[12px] xl:text-[13px] 2xl:text-[20px]">Support kami di <Link className="text-[#ff7676] font-bold" href="https://trakteer.id/maru-maru/tip?open=true" target="_blank">Trakteer Maru</Link> & <Link className="text-[#ff7676] font-bold" href="https://trakteer.id/jows/tip?open=true" target="_blank">Trakteer Jows</Link></div>
+            <div className="text-white font-thin text-[10px] sm:text-[10px] md:text-[10px] lg:text-[10px] xl:text-[11px] 2xl:text-[18px] text-center">Developed by <Link className="text-[#97D3FF] font-bold" href="https://twitter.com/maruu_snk" target="_blank">Maruu</Link> & <Link className="text-[#97D3FF] font-bold" href="https://twitter.com/jows__" target="_blank">Jows</Link></div>
           </div>
         </div>
       </div>
