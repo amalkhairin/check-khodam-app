@@ -80,10 +80,10 @@ export default function Home() {
       <div className="w-auto h-full custom-bg m-0 overflow-hidden">
         <div className="w-auto h-screen flex flex-col justify-center items-center relative z-10 m-0 overflow-hidden">
           <div className="w-full h-screen flex flex-col justify-center items-center">
-            <div className="flex flex-col justify-center mb-4 px-5 py-2 rounded-lg bg-[#dcad6746] items-center text-[12px] sm:text-[12px] md:text-[12px] lg:text-[12px] xl:text-[13px] 2xl:text-[20px]">
+            {/* <div className="flex flex-col justify-center mb-4 px-5 py-2 rounded-lg bg-[#dcad6746] items-center text-[12px] sm:text-[12px] md:text-[12px] lg:text-[12px] xl:text-[13px] 2xl:text-[20px]">
               <div className=" text-white text-center">Mulai 22 Juni 2024, Website check khodam akan dialihkan ke</div>
               <div><Link className="text-[#d9f3ff] underline font-bold" href="https://check-your-khodam-new.netlify.app">https://check-your-khodam-new.netlify.app</Link></div>
-            </div>
+            </div> */}
             <div className="flex-col text-white bg-[#9394ab3f] p-10 backdrop-filter backdrop-blur-sm border border-gray-500 rounded-xl sm:w-screen md:w-screen lg:w-1/3 xl:w-1/3 2xl:w-1/3 mx-1">
               <div className="flex flex-col justify-center items-center">
                 <h2 className="text-xl sm:text-xl md:text-xl lg:text-xl xl:text-2xl 2xl:text-4xl font-bold title">Cek Khodam</h2>
