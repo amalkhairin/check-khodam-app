@@ -80,10 +80,10 @@ export default function Home() {
             <div className="text-white font-thin text-[10px] sm:text-[10px] md:text-[10px] lg:text-[10px] xl:text-[11px] 2xl:text-[18px] text-center">Developed by <Link className="text-[#97D3FF] font-bold" href="https://twitter.com/maruu_snk" target="_blank">Maruu</Link> & <Link className="text-[#97D3FF] font-bold" href="https://twitter.com/jows__" target="_blank">Jows</Link></div>
           </div>
           <div className="w-full h-screen flex flex-col justify-center items-center">
-            <div className="flex flex-col justify-center mb-4 px-5 py-2 rounded-lg bg-[#dcad6746] items-center text-[12px] sm:text-[12px] md:text-[12px] lg:text-[12px] xl:text-[13px] 2xl:text-[20px]">
+            {/* <div className="flex flex-col justify-center mb-4 px-5 py-2 rounded-lg bg-[#dcad6746] items-center text-[12px] sm:text-[12px] md:text-[12px] lg:text-[12px] xl:text-[13px] 2xl:text-[20px]">
               <div className=" text-white text-center">Mulai 22 Juni 2024, Website check khodam akan dialihkan ke</div>
               <div><Link className="text-[#d9f3ff] underline font-bold" href="https://check-your-khodam.netlify.app/">https://check-your-khodam.netlify.app/</Link></div>
-            </div>
+            </div> */}
             <div className="flex-col text-white bg-[#9394ab3f] p-10 backdrop-filter backdrop-blur-sm border border-gray-500 rounded-xl sm:w-screen md:w-screen lg:w-1/3 xl:w-1/3 2xl:w-1/3 mx-1">
               <div className="flex flex-col justify-center items-center">
                 <h2 className="text-xl sm:text-xl md:text-xl lg:text-xl xl:text-2xl 2xl:text-4xl font-bold title">Cek Khodam</h2>
