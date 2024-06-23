@@ -52,10 +52,10 @@ export default function Home() {
 
   const checkKhodam = (e: any) => {
     e.preventDefault();
-    const input = document.getElementById("inputnama");
-    if (input && input instanceof HTMLInputElement) {
-      setName(input.value)
-    }
+    // const input = document.getElementById("inputnama");
+    // if (input && input instanceof HTMLInputElement) {
+    setName(e.target.inputn.value);
+    // }
     setIsLoading(true);
     setFlag2(false);
     setTimeout(() => {
@@ -87,13 +87,13 @@ export default function Home() {
             <div className="flex-col text-white bg-[#9394ab3f] p-10 backdrop-filter backdrop-blur-sm border border-gray-500 rounded-xl sm:w-screen md:w-screen lg:w-1/3 xl:w-1/3 2xl:w-1/3 mx-1">
               <div className="flex flex-col justify-center items-center">
                 <h2 className="text-xl sm:text-xl md:text-xl lg:text-xl xl:text-2xl 2xl:text-4xl font-bold title">Cek Khodam</h2>
-                {!isLoading && !isResult && <div className="flex flex-col justify-center items-center">
+                {!isLoading && !isResult && <form onSubmit={(e) => checkKhodam(e)} className="flex flex-col justify-center items-center">
                   <div className="mt-5 flex flex-col justify-center items-center">
                     <div className="text-center font-light text-sm sm:text-sm md:text-sm lg:text-sm xl:text-md 2xl:text-2xl">Cek khodam yang ada di dalam diri kamu</div>
-                    <input id="inputnama" className="sm:text-sm md:text-sm lg:text-sm xl:text-md 2xl:text-2xl custom-input-text mt-2" placeholder="Tulis nama kamu di sini" required />
+                    <input id="inputnama" name="inputn" className="sm:text-sm md:text-sm lg:text-sm xl:text-md 2xl:text-2xl custom-input-text mt-2" placeholder="Tulis nama kamu di sini" required />
                   </div>
-                  <button onClick={(e) => checkKhodam(e)} className="mt-5 bg-[#5F59D0] px-8 py-2 rounded-[200px] hover:bg-[#4e4aa7] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] 2xl:text-[24px]" id="btn-check" type="submit" >CHECK</button>
-                </div>}
+                  <button className="mt-5 bg-[#5F59D0] px-8 py-2 rounded-[200px] hover:bg-[#4e4aa7] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] 2xl:text-[24px]" id="btn-check" type="submit" >CHECK</button>
+                </form>}
                 {isLoading && <div className="flex flex-col justify-center items-center mt-5">
                   <div className="loading w-[80px] h-[80px] relative overflow-visible"></div>
                   <div className="text-white mt-5 text-sm sm:text-sm md:text-sm lg:text-sm xl:text-md 2xl:text-2xl font-extralight text-center">Kami sedang memeriksa khodam yang ada di dalam diri kamu</div>
